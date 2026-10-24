@@ -1,0 +1,30 @@
+/* Variables CSS: así no repites colores por todo el archivo */
+:root {
+  --color-primario: #0d47a1;
+  --color-oscuro: #1a1a1a;
+  --fuente-principal: 'Segoe UI', sans-serif;
+}
+
+body {
+  font-family: var(--fuente-principal);
+}
+
+/* Uso de Flexbox: alinea el contenido del footer */
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Uso de Grid: para la sección de figuras en galería */
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive: ajusta el título grande en pantallas pequeñas (celulares) */
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+}
